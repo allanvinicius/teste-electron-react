@@ -69,7 +69,7 @@ export interface ModalProps {
 }
 
 export interface SearchProps {
-  value: any;
-  onChange: any;
+  value: string;
+  onChange: (item: string) => void;
   handleClick: () => void;
 }
