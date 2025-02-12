@@ -70,17 +70,16 @@ const Button = styled.button`
   }
 `;
 ```
-
 ---
 
 ### 📦 Componentização
 O projeto segue uma abordagem **modular**, separando cada funcionalidade em componentes reutilizáveis, como:
 
-- **CardPokemon.tsx** - Lista de livros cadastrados
-- **ListPokemon.tsx** - Lista de autores cadastrados
-- **LoadMore.tsx** - Formulário para adicionar/editar livros
-- **ModalPokemon.tsx** - Formulário para adicionar/editar autores
-- **SearchPokemon.tsx** - Componente reutilizável para modais
+- **CardPokemon.tsx** - Card de pokemons
+- **ListPokemon.tsx** - Lista de pokemons
+- **LoadMore.tsx** - Carregar mais pokemons
+- **ModalPokemon.tsx** - Modal de pokemons
+- **SearchPokemon.tsx** - Pesquisa de pokemons
 
 Cada componente recebe **props tipadas** e utiliza os estados do **Context API**.
 
