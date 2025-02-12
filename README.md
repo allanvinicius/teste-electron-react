@@ -1,50 +1,94 @@
-# React + TypeScript + Vite
+# 📚 Projeto CRUD de Livros e Autores
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🚀 Tecnologias Utilizadas
 
-Currently, two official plugins are available:
+- **React** com **Vite** para um ambiente de desenvolvimento rápido e eficiente.
+- **TypeScript** para garantir segurança e melhor manutenção do código.
+- **Context API** para gerenciar o estado global do CRUD.
+- **Styled Components** para estilização dinâmica e componentizada.
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📦 Como Executar o Projeto
 
-## Expanding the ESLint configuration
+### 🔧 Pré-requisitos
+Certifique-se de ter o **Node.js** instalado em sua máquina.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### 📥 Instalação
+```sh
+# Clone o repositório
+git clone https://github.com/allanvinicius/teste-electron-react.git
 
-- Configure the top-level `parserOptions` property like this:
+# Acesse a pasta do projeto
+cd nome-do-repositorio
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Instale as dependências
+yarn install  # ou npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+### ▶️ Rodando o Projeto
+```sh
+# Iniciar o servidor de desenvolvimento
+yarn dev  # ou npm run dev
 ```
+A aplicação estará disponível em **http://localhost:5173**.
+
+---
+
+## 🏗️ Arquitetura do Projeto
+
+### 📂 Estrutura de Pastas
+```
+/src
+│── components/       # Componentes reutilizáveis
+│── context/          # Context API para gerenciamento de estado
+│── hooks/            # Hooks customizados
+│── pages/            # Páginas principais da aplicação
+│── services/         # Serviços auxiliares (ex: api)
+│── styles/           # Estilizações globais
+│── types/            # Tipagens
+```
+
+### 🌍 Gerenciamento de Estado com Context API
+A aplicação utiliza a **Context API** para armazenar e manipular os dados do CRUD. O estado global contém a seguinte estrutura:
+
+---
+
+### 🎨 Estilização com Styled Components
+Todos os estilos são feitos utilizando **Styled Components**, permitindo **componentização e dinamismo** na estilização.
+Exemplo:
+
+```tsx
+const Button = styled.button`
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  &:hover {
+    background-color: #0056b3;
+  }
+`;
+```
+
+---
+
+### 📦 Componentização
+O projeto segue uma abordagem **modular**, separando cada funcionalidade em componentes reutilizáveis, como:
+
+- **CardPokemon.tsx** - Lista de livros cadastrados
+- **ListPokemon.tsx** - Lista de autores cadastrados
+- **LoadMore.tsx** - Formulário para adicionar/editar livros
+- **ModalPokemon.tsx** - Formulário para adicionar/editar autores
+- **SearchPokemon.tsx** - Componente reutilizável para modais
+
+Cada componente recebe **props tipadas** e utiliza os estados do **Context API**.
+
+---
+
+---
+
+## 📄 Licença
+Este projeto está sob a licença **MIT**.
+
+
