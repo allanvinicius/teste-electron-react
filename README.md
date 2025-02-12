@@ -1,4 +1,4 @@
-# 📚 Projeto CRUD de Livros e Autores
+# 📚 Teste prático
 
 ## 🚀 Tecnologias Utilizadas
 
