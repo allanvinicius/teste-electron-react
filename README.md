@@ -49,7 +49,7 @@ A aplicação estará disponível em **http://localhost:5173**.
 ```
 
 ### 🌍 Gerenciamento de Estado com Context API
-A aplicação utiliza a **Context API** para armazenar e manipular os dados do CRUD. O estado global contém a seguinte estrutura:
+A aplicação utiliza a **Context API** para armazenar e manipular os dados. O estado global contém a seguinte estrutura:
 
 ---
 
