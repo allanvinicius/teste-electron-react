@@ -4,7 +4,7 @@
 
 - **React** com **Vite** para um ambiente de desenvolvimento rápido e eficiente.
 - **TypeScript** para garantir segurança e melhor manutenção do código.
-- **Context API** para gerenciar o estado global do CRUD.
+- **Context API** para gerenciar o estado global.
 - **Styled Components** para estilização dinâmica e componentizada.
 ---
 
